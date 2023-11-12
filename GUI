@@ -89,6 +89,48 @@ Tab:AddButton({
    end    
 })
 
+Tab:AddButton({
+ Name = "Bone Sword(OP)",
+ Callback = function()
+        game.Players:Chat(";gear me 95951291")
+   end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Music",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Prefix ;"
+})
+
+local Section = Tab:AddSection({
+	Name = "Scary"
+})
+
+Tab:AddButton({
+ Name = "Scary Scream",
+ Callback = function()
+        game.Players:Chat(";music 933230732")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Scary Scream 2",
+ Callback = function()
+        game.Players:Chat(";music 7524653769")
+   end    
+})
+
+Tab:AddButton({
+ Name = "SCP 096",
+ Callback = function()
+        game.Players:Chat(";music 4826834228")
+   end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "Silent CMD",
 	Icon = "rbxassetid://4483345998",
