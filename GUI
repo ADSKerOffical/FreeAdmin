@@ -1,0 +1,124 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Free admin GUI", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Gears",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Prefix ;"
+})
+
+Tab:AddButton({
+	Name = "OP Hammer",
+	Callback = function()
+      		game.Players:Chat(";gear me 45177979")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Table",
+	Callback = function()
+      		game.Players:Chat(";gear me 243788010")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Vacuum cleaner",
+	Callback = function()
+      		game.Players:Chat(";gear me 84418938")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Black hole bomb",
+	Callback = function()
+      		game.Players:Chat(";gear me 28277486")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Backet",
+	Callback = function()
+      		game.Players:Chat(";gear 25162389")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Hot potato",
+	Callback = function()
+      		game.Players:Chat(";gear me 25741198")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Silent CMD",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "With your prefix For example :ff"
+})
+
+Tab:AddTextbox({
+	Name = "CMD",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players:Chat(Value)
+	end	  
+})
+
+local Tab = Window:MakeTab({
+	Name = "GUIS",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+
+Tab:AddButton({
+	Name = "Fedoratum admin",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/showcases/main/fedoratumadmin",true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Silent CMD",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/pGe3C71V"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Lag server",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Works in free admin arena, bendy and more"
+})
+
+Tab:AddButton({
+	Name = "Tap here",
+	Callback = function()
+      		game:GetService("CoreGui").PurchasePrompt.Enabled = false
+_G.Lag = true
+while _G.Lag do
+for i,v in pairs(workspace:GetDescendants()) do
+   if v:IsA("ClickDetector") then
+    fireclickdetector(v)
+   end
+end
+  wait(1)
+  end
+  	end    
+})
