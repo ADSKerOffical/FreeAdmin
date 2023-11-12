@@ -41,7 +41,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Backet",
+	Name = "Backet(Half OP)",
 	Callback = function()
       		game.Players:Chat(";gear 25162389")
   	end    
@@ -52,6 +52,41 @@ Tab:AddButton({
 	Callback = function()
       		game.Players:Chat(";gear me 25741198")
   	end    
+})
+
+Tab:AddButton({
+ Name = "Bazooka(OP)",
+ Callback = function()
+        game.Players:Chat(";gear me 169602103")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Scroll(Half OP)",
+ Callback = function()
+        game.Players:Chat(";gear me 125013830")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Triple laser(OP)",
+ Callback = function()
+        game.Players:Chat(";gear me 115377964")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Tri-Lazer 3000(OP)",
+ Callback = function()
+        game.Players:Chat(";gear me 139578207")
+   end    
+})
+
+Tab:AddButton({
+ Name = "Rainbow Periastron Sword",
+ Callback = function()
+        game.Players:Chat(";gear me 159229806")
+   end    
 })
 
 local Tab = Window:MakeTab({
