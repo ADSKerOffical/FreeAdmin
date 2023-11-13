@@ -96,6 +96,90 @@ Tab:AddButton({
    end    
 })
 
+Tab:AddButton({
+	Name = "Black Hole Ray(Half OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 78005009")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Rocket launcher(Half OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 67747912")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Gravity Hummer(Half OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 33866846")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Platform Producer(Half OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 34898883")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Bear Gun(Half OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 90718350")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Remote Bomb(OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 33383241")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Divine Horn(Half OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 127506257")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Spray Paint(OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 80576967")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Hammer Judges(Half OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 1046322934")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Resize tool(OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 16969792")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Staff of Fire",
+	Callback = function()
+      		game.Players:Chat(";gear me 32858741")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Glove(Half OP)",
+	Callback = function()
+      		game.Players:Chat(";gear me 65469882")
+  	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "Music",
 	Icon = "rbxassetid://4483345998",
@@ -175,7 +259,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "Lag server",
+	Name = "Server breaker",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -185,7 +269,7 @@ local Section = Tab:AddSection({
 })
 
 Tab:AddButton({
-	Name = "Tap here",
+	Name = "Lag Server",
 	Callback = function()
       		game:GetService("CoreGui").PurchasePrompt.Enabled = false
 _G.Lag = true
