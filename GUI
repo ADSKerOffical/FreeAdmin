@@ -306,6 +306,33 @@ Tab:AddToggle({
    end    
 })
 
+Tab:AddToggle({
+	Name = "Anti Void",
+	Default = false,
+	Callback = function(Value)
+	AntiVoid = Value
+		local part = Instance.new("Part")
+part.Name = "AntiFallPart"
+part.Size = Vector3.new(50000, 5, 50000)
+part.Transparency = 1
+part.Anchored = AntiVoid
+part.Position = Vector3.new(-1, -100, 66)
+part.Parent = game.Workspace
+	end 
+})
+
+Tab:AddToggle({
+	Name = "Anti freeze",
+	Default = false,
+	Callback = function(Value)
+	AntiFreeze = Value
+	while AntiFreeze do
+	      game.Players:Chat(";thaw")
+	task.wait(1.8)
+	end
+	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "Extra",
 	Icon = "rbxassetid://7733955740",
@@ -357,7 +384,7 @@ Tab:AddTextbox({
 	Callback = function(Value)
 	game.Workspace.Gravity = 0
 		last_pick_sin_mrazy = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame 
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-354, -300, -38) 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-354, -370, -38) 
     wait(1)
     game.Players:Chat(";unfly " .. Value .."")
     game.Players:Chat(";clip " .. Value .."")
