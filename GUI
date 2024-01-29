@@ -359,8 +359,8 @@ Tab:AddTextbox({
 		last_pick_sin_mrazy = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame 
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-354, -300, -38) 
     wait(1)
-    game.Players:Chat(";unfly" .. Value .."")
-    game.Players:Chat(";clip" .. Value .."")
+    game.Players:Chat(";unfly " .. Value .."")
+    game.Players:Chat(";clip " .. Value .."")
     game.Players:Chat(";Bring " .. Value .."")
     wait()
     game. Players.LocalPlayer.Character.HumanoidRootPart.CFrame = last_pick_sin_mrazy 
