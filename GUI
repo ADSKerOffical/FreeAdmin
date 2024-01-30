@@ -236,6 +236,19 @@ Tab:AddTextbox({
 	end	  
 })
 
+local Section = Tab:AddSection({
+	Name = "For intellectually developed people"
+})
+
+Tab:AddTextbox({
+	Name = "Uncmdbar2",
+	Default = "Username",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players:Chat(";Uncmdbar2 ".. Value .."")
+	end	  
+})
+
 local Tab = Window:MakeTab({
 	Name = "GUIS",
 	Icon = "rbxassetid://4483345998",
