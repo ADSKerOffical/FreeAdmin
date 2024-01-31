@@ -151,11 +151,31 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddButton({
-	Name = "Divine Horn(Half OP)",
-	Callback = function()
-      		game.Players:Chat(";gear me 127506257")
-  	end    
+Tab:AddDropdown({
+	Name = "Divine horn",
+	Default = "",
+	Options = {"Get Divine Horn", "Multi Activation", "Spam Activation"},
+	Callback = function(Value)
+		if Value == "Get Divine Horn" then
+		game.Players:Chat(";gear me 127506257")
+		end
+		if Value == "Multi Activation" then
+		local args = {
+    [1] = "DO THE THING!!!"
+}
+
+game:GetService("Players").LocalPlayer.Character.KOSSGustHorn.RemoteEvent:FireServer(unpack(args))
+		end
+		if Value == "Spam Activation" then
+		while game:GetService("RunService").RenderStepped:wait() do
+		local args = {
+    [1] = "DO THE THING!!!"
+}
+
+game:GetService("Players").LocalPlayer.Character.KOSSGustHorn.RemoteEvent:FireServer(unpack(args))
+		end
+		end
+	end    
 })
 
 Tab:AddButton({
@@ -341,6 +361,30 @@ Tab:AddToggle({
 	AntiFreeze = Value
 	while AntiFreeze do
 	      game.Players:Chat(";thaw")
+	task.wait(1.8)
+	end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Anti jail",
+	Default = false,
+	Callback = function(Value)
+	AntiJail = Value
+	while AntiJail do
+	      game.Players:Chat(";unjail")
+	task.wait(1.8)
+	end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Anti control",
+	Default = false,
+	Callback = function(Value)
+	AntiControl = Value
+	while AntiControl do
+	      game.Players:Chat(";uncontrol")
 	task.wait(1.8)
 	end
 	end    
