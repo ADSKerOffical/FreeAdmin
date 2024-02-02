@@ -241,6 +241,35 @@ Tab:AddButton({
    end    
 })
 
+Tab:AddDropdown({
+	Name = "Snowball",
+	Default = "",
+	Options = {"Get Snowball", "Spam Snowballs"},
+	Callback = function(Value)
+		if Value == "Get Snowball" then
+		game.Players:Chat(";gear me 19328185")
+		end
+		if Value == "Spam Snowballs" then
+		local LP = game.Players.LocalPlayer
+repeat wait() until LP.Character
+for i,v in pairs(LP.Backpack:GetChildren()) do
+   if v.Name == "Snowball" then
+       v.Parent = LP.Character
+   end
+end
+while true do
+   wait()
+   for i,v in pairs (LP.Character:GetChildren()) do
+       if v.Name == "Snowball" then
+           v:Activate()
+       end
+   end
+   task.wait()
+end
+		end
+	end
+})
+
 local Tab = Window:MakeTab({
 	Name = "Silent CMD",
 	Icon = "rbxassetid://4370318685",
@@ -494,5 +523,24 @@ game:GetService("UserInputService").InputBegan:Connect(function(key)
   end
  end
 end)
+   end    
+})
+
+Tab:AddButton({
+ Name = "Check item name",
+ Callback = function()
+        local player = game.Players.LocalPlayer
+local function getCurrentItemInHand()
+    if player.Character then
+        for _, item in pairs(player.Character:GetChildren()) do
+            if item:IsA("Tool") then
+                return item.Name
+            end
+        end
+    end
+    return "No object in hand"
+end
+
+print(getCurrentItemInHand())
    end    
 })
