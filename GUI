@@ -258,13 +258,13 @@ for i,v in pairs(LP.Backpack:GetChildren()) do
    end
 end
 while true do
-   wait()
+   wait(0.25)
    for i,v in pairs (LP.Character:GetChildren()) do
        if v.Name == "Snowball" then
            v:Activate()
        end
    end
-   task.wait()
+   task.wait(0.25)
 end
 		end
 	end
